@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.16)
+project(leetcode)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include(FetchContent)
+
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+)
+
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+add_subdirectory(problems)
