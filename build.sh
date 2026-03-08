@@ -17,4 +17,4 @@ cd $BUILD_DIR
 cmake ../.. -DPROBLEM_ID=$ID
 cmake --build .
 
-GTEST_COLOR=1 ctest --output-on-failure
+GTEST_COLOR=1 ctest --verbose --output-on-failure
